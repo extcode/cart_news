@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-02-16T10:15:00Z" product-name="cart_news">
+        <header/>
+        <body>
+
+            <trans-unit id="tx_news_domain_model_news.sku">
+                <source>SKU</source>
+            </trans-unit>
+            <trans-unit id="tx_news_domain_model_news.price.gross">
+                <source>Price (gross)</source>
+            </trans-unit>
+            <trans-unit id="tx_news_domain_model_news.price.net">
+                <source>Price (net)</source>
+            </trans-unit>
+            <trans-unit id="tx_news_domain_model_news.type.I.news_as_product">
+                <source>News as Product</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

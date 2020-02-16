@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-02-07T14:15:00Z" product-name="cart_news">
+        <header/>
+        <body>
+
+            <trans-unit id="tx_cartnews.error.invalid_course">
+                <source>Invalid Course</source>
+            </trans-unit>
+            <trans-unit id="tx_cartnews.error.course_not_found">
+                <source>Course not found</source>
+            </trans-unit>
+            <trans-unit id="tx_cartnews.error.invalid_quantity">
+                <source>Invalid Quantity</source>
+            </trans-unit>
+
+            <trans-unit id="tx_cartnews.add_to_cart">
+                <source>add to cart</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

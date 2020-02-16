@@ -1,0 +1,12 @@
+.Build
+Documentation-GENERATED-temp
+composer.lock
+
+.php_cs.cache
+
+.DS_Store
+.idea
+.env
+
+phpunit.coverage.xml
+phpunit.report.xml

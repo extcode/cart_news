@@ -1,0 +1,15 @@
+plugin.tx_news {
+    view {
+        partialRootPaths {
+            100 = EXT:cart_news/Resources/Private/Partials
+        }
+    }
+
+    settings {
+        addToCartByAjax = {$plugin.tx_cart.settings.addToCartByAjax}
+
+        cart.pid < plugin.tx_cart.settings.cart.pid
+
+        currencyFormat < plugin.tx_cart.settings.format.currency
+    }
+}

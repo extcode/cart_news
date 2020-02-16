@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{newsItem.type} == 'news_product' && {settings.cart.pid}">
+
+    <span class="news-product-price">
+        <f:format.html><f:format.currency
+                    currencySign="{settings.currencyFormat.currencySign}"
+                    decimalSeparator="{settings.currencyFormat.decimalSeparator}"
+                    thousandsSeparator="{settings.currencyFormat.thousandsSeparator}"
+                    prependCurrency="{settings.currencyFormat.prependCurrency}"
+                    separateCurrency="{settings.currencyFormat.separateCurrency}"
+                    decimals="{settings.currencyFormat.decimals}">{newsItem.price}</f:format.currency></f:format.html>
+    </span>
+    <div class="cart_form">
+        <f:form id="news-{newsItem.uid}"
+                class="add-to-cart-form"
+                pageUid="{settings.cart.pid}"
+                extensionName="Cart"
+                pluginName="Cart"
+                controller="Cart\Product"
+                action="add"
+                method="post"
+                pageType="{f:if(condition:'{settings.addToCartByAjax}', then:'{settings.addToCartByAjax}', else:'')}"
+                additionalAttributes="{data-ajax: '{f:if(condition: \'{settings.addToCartByAjax}\', then: \'1\', else: \'0\')}', data-type: 'news', data-id: '{newsItem.uid}'}">
+            <input type="hidden" name="tx_cart_cart[productType]" value="CartNews">
+            <input type="hidden" name="tx_cart_cart[newsItem]" value="{newsItem.uid}">
+
+            <input class="form-control" type="text"name="tx_cart_cart[quantity]" value="1">
+            <input type="submit" class="btn btn-secondary" value="{f:translate(key:'tx_cartnews.add_to_cart', extensionName: 'CartNews')}">
+
+            <div class="form-message" data-ajax-message-timeout="3000">
+                <div class="form-success" style="display: none;" data-ajax-success-block>
+                    <div class="alert alert-success" data-ajax-success-message></div>
+                </div>
+                <div class="form-error" style="display: none;" data-ajax-error-block>
+                    <div class="alert alert-warning" data-ajax-error-message></div>
+                </div>
+            </div>
+        </f:form>
+    </div>
+</f:if>
+
+</html>

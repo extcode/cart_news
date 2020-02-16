@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2020-02-16T10:30:00Z" product-name="cart_news">
+        <header/>
+        <body>
+
+            <trans-unit id="tab.news_as_product">
+                <source>Product</source>
+                <target>Produkt</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

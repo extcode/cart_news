@@ -1,0 +1,2 @@
+# cat=basic/enable/100; type=boolean; label=LLL:EXT:cart_news/Resources/Private/Language/locallang_be.xlf:extmng.input_is_net_price
+inputIsNetPrice = 1
