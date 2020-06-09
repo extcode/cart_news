@@ -43,7 +43,7 @@ example copied into the TypoScript configuration of EXT:news.
 
       ...
 
-   </form>
+   </f:form>
 
 The form then contains a field for the number. In theory, this could also be
 a non-visible field with a fixed number. Two other non-visible form fields
